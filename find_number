@@ -1,0 +1,19 @@
+from random import randint
+rand = randint(1, 100)
+sayac =0
+while True:
+    sayac += 1
+    number = int(input("enter number: "))
+    if number == rand:
+        print("you win")
+        print("you try: ", sayac)
+        break
+    elif number > rand:
+        print("lower")
+        continue
+    elif number < rand:
+        print("higher")
+        continue
+    else:
+        print("random choise number is : ", rand)
+        print("you try: ", sayac)
